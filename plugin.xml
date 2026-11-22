@@ -1,0 +1,18 @@
+<library path="src">
+  <class name="ExecutionFlow" type="rqt_execution_flow.plugin.ExecutionFlowPlugin"
+         base_class_type="rqt_gui_py::Plugin">
+    <description>
+      Live visualizer for ROS 2 action goals and service calls (read-only).
+    </description>
+    <qtgui>
+      <group>
+        <label>Actions</label>
+        <icon type="theme">folder</icon>
+        <statustip>Plugins related to ROS actions.</statustip>
+      </group>
+      <label>Execution Flow</label>
+      <icon type="theme">network-transmit-receive</icon>
+      <statustip>See live action goals, feedback, cancels and service calls as a call tree and animated flow.</statustip>
+    </qtgui>
+  </class>
+</library>

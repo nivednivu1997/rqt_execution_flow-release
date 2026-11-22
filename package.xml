@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rqt_execution_flow</name>
+  <version>0.2.0</version>
+  <description>
+    rqt plugin that shows ROS 2 action goals and service calls live: a nested call
+    tree, an animated flow of goals, feedback, cancels, results, requests and
+    responses, an event timeline, per-call statistics, slow-call flags, and record
+    and slow-motion replay. Read-only: it never sends goals, cancels or service calls.
+  </description>
+  <maintainer email="nivednivu1997@gmail.com">Nived Krishnan</maintainer>
+  <license>Apache-2.0</license>
+
+  <url type="website">https://github.com/nivednivu1997/rqt_execution_flow</url>
+  <url type="repository">https://github.com/nivednivu1997/rqt_execution_flow</url>
+  <url type="bugtracker">https://github.com/nivednivu1997/rqt_execution_flow/issues</url>
+
+  <author>Nived Krishnan</author>
+
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>python_qt_binding</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rosidl_runtime_py</exec_depend>
+  <exec_depend>rqt_gui</exec_depend>
+  <exec_depend>rqt_gui_py</exec_depend>
+  <exec_depend>service_msgs</exec_depend>
+  <!-- only for the demo -->
+  <exec_depend>action_tutorials_interfaces</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+    <rqt_gui plugin="${prefix}/plugin.xml"/>
+  </export>
+</package>
