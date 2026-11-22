@@ -1,0 +1,13 @@
+Source: ros-jazzy-rqt-execution-flow
+Section: misc
+Priority: optional
+Maintainer: "Nived Krishnan" <nivednivu1997@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-jazzy-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://github.com/nivednivu1997/rqt_execution_flow
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-rqt-execution-flow
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-jazzy-action-msgs, ros-jazzy-action-tutorials-interfaces, ros-jazzy-python-qt-binding, ros-jazzy-rclpy, ros-jazzy-rosidl-runtime-py, ros-jazzy-rqt-gui, ros-jazzy-rqt-gui-py, ros-jazzy-service-msgs, ros-jazzy-std-srvs, ros-jazzy-ros-workspace
+Description: rqt plugin that shows ROS 2 action goals and service calls live: a nested call tree, an animated flow of goals, feedback, cancels, results, requests and responses, an event timeline, per-call statistics, slow-call flags, and record and slow-motion replay.
+ Read-only: it never sends goals, cancels or service calls.
